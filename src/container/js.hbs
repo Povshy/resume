@@ -1,0 +1,114 @@
+<div>
+    <h1>{{name}}</h1>
+    <p><em>{{description}}</em></p>
+    <div>
+        {{#with history}}
+        <div><b>{{founder}}</b> ({{year}})</div>
+        {{/with}}
+    </div>
+
+    <br>
+    <hr>
+    <div>
+        <h4><u>Types:</u></h4>
+        {{#each types}}
+        <ul>
+            <li>{{this}}</li>
+        </ul>
+        {{/each}}
+    </div>
+    <hr>
+    <div>
+        <h4><u>Syntax:</u></h4>
+        <div>
+            {{#with syntax}}
+            <div>
+                {{#each variables}}
+                <ul>
+                    <li>{{this}}</li>
+                </ul>
+                {{/each}}
+            </div>
+            <br>
+            <hr>
+            <div>
+                {{#each functions}}
+                <ul>
+                    <li>{{this}}</li>
+                </ul>
+                {{/each}}
+            </div>
+            <hr>
+            <div>
+                {{#each conditionals}}
+                <ul>
+                    <li>{{this}}</li>
+                </ul>
+                {{/each}}
+            </div>
+            <hr>
+            <div>
+                {{#each loops}}
+                <ul>
+                    <li>{{this}}</li>
+                </ul>
+                {{/each}}
+            </div>
+            <hr>
+            <div>
+                {{#each classes}}
+                <ul>
+                    <li>{{this}}</li>
+                </ul>
+                {{/each}}
+            </div>
+
+            {{/with}}
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h4><u>Features:</u></h4>
+        <div>
+            {{#each features}}
+            <ul>
+                <li>{{this}}</li>
+            </ul>
+            {{/each}}
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h4><u>Libraries:</u></h4>
+        <div>
+            {{#each libraries}}
+            <ul>
+                <li>{{this}}</li>
+            </ul>
+            {{/each}}
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h4><u>Tools:</u></h4>
+        <div>
+            {{#each tools}}
+            <ul>
+                <li>{{this}}</li>
+            </ul>
+            {{/each}}
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h4><u>Community:</u></h4>
+        <div>
+            {{#each community}}
+            <ul>
+                <li>{{name}} <em>({{type}})</em></li>
+            </ul>
+            {{/each}}
+        </div>
+    </div>
+
+</div>
