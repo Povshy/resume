@@ -56,36 +56,7 @@
         <hr>
         {{!-- ----------------------- --}}
 
-        <div>
-            {{#with winner}}
-            <h2>{{title}}</h2>
-            <div>
-                {{#with table}}
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            {{#each head}}
-                            <th>{{this}}</th>
-                            {{/each}}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{#each user}}
-                        <tr>
-                            <td>{{place}}</td>
-                            <td>{{name}}</td>
-                            <td>{{surname}}</td>
-                            <td>{{nickname}}</td>
-                        </tr>
-                        {{/each}}
 
-                    </tbody>
-                </table>
-                {{/with}}
-            </div>
-            {{/with}}
-        </div>
-        <hr>
         {{!-- --------------------------------- --}}
 
         <div class="col-12">
@@ -198,12 +169,13 @@
             {{#with footer}}
             <h5>{{title}}</h5>
             <div class="col-9">
-                <div class="row gy-2">
+                <div class="row g-5">
                     <section class="col-4">
                         {{#each navigation}}
                         <div>
                             <a href="{{href}}">{{text}}</a>
                         </div>
+                        <br>
                         {{/each}}
                     </section>
                     <section class="col-4">
@@ -226,8 +198,7 @@
             </div>
             {{/with}}
         </div>
-
-
+        {{!-- ========================================= --}}
 
 
     </div>
