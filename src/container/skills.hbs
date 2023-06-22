@@ -3,12 +3,12 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/summary"
 --}}
 
-<div>
+<div class="px-4">
     {{#with main}}
     <main>
         <section>
             {{> title data="All skills" big=true}}
-            <ul>
+            <ul class="ms-3">
                 {{#each skills}}
                 <li>
                     {{name}}
@@ -31,7 +31,7 @@
 
         <section>
             {{> title data="My hobbies"}}
-            <ol>
+            <ol class="ms-3">
                 {{#each hobbies}}
                 <li>
                     {{name}}
