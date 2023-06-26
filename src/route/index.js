@@ -1556,6 +1556,7 @@ router.get('/task31', function (req, res) {
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/shophome', function (req, res) {
+  g
   // res.render генерує нам HTML сторінку
 
   //            ↙ cюди вводимо назву файлу з сontainer
@@ -1574,6 +1575,10 @@ router.get('/shophome', function (req, res) {
         {
           text: 'Help',
           href: 'https://www.youtube.com/',
+        },
+        {
+          text: 'Exit',
+          href: null,
         },
       ],
     },
