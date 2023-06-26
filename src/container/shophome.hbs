@@ -4,8 +4,12 @@
         <div class="card">
             <div class="nav">
                 {{#each links}}
-                <div class="nav-item p-3">
-                    <a href="{{href}}">{{text}}</a>
+                <div>
+                    {{#if href}}
+                    <a href="{{link}}" class="nav-link">{{text}}</a>
+                    {{else}}
+                    <a href="{{link}}" class="nav-link disabled">{{text}}</a>
+                    {{/if}}
                 </div>
                 {{/each}}
             </div>
