@@ -1,4 +1,86 @@
+/* :root {
+  background: green;
+}
+
+
+html {
+  max-width: 1000px;
+  background: blue;
+}
+
+body {
+  background: white;
+}
+
+* {
+  color: red;
+}
+
 h1 {
+  color: darkgoldenrod;
+}
+
+.box {
   color: aqua;
-  background: black;
+}
+
+#user, .user {
+  color: black;
+}
+
+h1, h2, button {
+  color: brown;
+}
+
+.button {
+  background: red;
+}
+
+div > p {
+  color: palegreen;
+}
+
+footer > .user {
+  color: chartreuse;
+}
+
+footer em {
+  color: chartreuse;
+} */
+
+
+.card-dark {
+  background: #d5c7c7;
+}
+
+.item {
+  color: green;
+}
+
+.item:only-child {
+  color: blue;
+}
+
+.input-dark {
+  background: #aca7a7;
+}
+
+.input-dark[required] {
+  background: #a46464;
+}
+
+.input-dark[type="number"] {
+  background: #0fcd31;
+}
+
+.small-img[alt~="small"] {
+  height: 500px;
+}
+
+button[class|="btn"] {
+  background: red;
+}
+
+.btn::first-letter {
+  color:rgb(255, 255, 255)
 }
